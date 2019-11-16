@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django</title>
+</head>
+<body>
+    <h1>{{ city }}</h1>
+    <h2>第一模板语言</h2>>
+    <h3>{{ alist.2 }}</h3>
+    <h4>{{ adict.name }}</h4>
+<ul>
+    {% for item in alist %}
+        <list>{{ 当前第forloop.counter次循环 }}, {{ item }}</list>
+        {% empty %}
+    {% endfor %}
+    {% if a == 10 %}
+    {% elif a == 20 %}
+        {% else %}
+    {% endif %}
+    <p>{{ html_str | safe }}</p>
+</ul>
+</body>
+</html>
